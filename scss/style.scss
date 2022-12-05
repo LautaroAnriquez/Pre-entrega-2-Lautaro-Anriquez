@@ -1,0 +1,20 @@
+/*reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// import
+
+@import "utilidades/variables";
+@import "utilidades/mixin";
+@import "paginas/index";
+@import "paginas/sobre-nosotros";
+@import "paginas/preguntas-frecuentes";
+@import "paginas/mi-cuenta";
+@import "paginas/productos";
+@import "paginas/mq";
+
+

@@ -1,0 +1,72 @@
+/* mq */
+
+@media screen and (min-width:1024px){
+    /*estilo del nav*/
+
+    .nav-estilo{
+        div{
+            div{
+                ul{
+                    li{
+                        a:hover{
+                            @include hoverMenu;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* estilos de boton */
+
+    main{
+        ul{
+            li{
+                .boton:hover{
+                    @include hoverBoton;
+                }
+            }
+        }
+    }
+
+    /* estilo del fieldset */
+
+    main{
+        fieldset{
+            display: block;
+            background-color: black;
+            text-align: center;
+            color: whitesmoke;
+            padding: 10px;
+            border: 2px solid black;
+        }
+    }
+
+    /* estilo de la section */
+
+    section{
+        ul{
+            li:hover{
+                @include hoverMenu;
+            }
+        }
+    }
+
+    /* estilo del nav del footer */
+
+    footer{
+        nav{
+            ul{
+                li{
+                    display: inline-block;
+                }
+                li:hover{
+                    @include hoverMenu;
+                    a{
+                        color: rgb(179, 24, 24);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,119 @@
+/* estilos generales*/
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* estilo del contenedor */
+
+.contenedor-uno{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer";
+}
+
+/* estilos del header*/
+
+header{
+    grid-area: header;
+    text-align: center;
+    img{
+        width: 20rem;
+        margin-top: -5rem;
+        margin-bottom: -2rem;
+    }
+    .nav-estilo{
+        div{
+            div{
+                ul{
+                    li{
+                        a{
+                            color: black;
+                            font-weight: bold;
+                            font-size: larger;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* estilos del main*/
+
+main{
+    grid-area: main;
+    background-image: $imagen-fondo;
+    background-size: cover;
+    color: whitesmoke;
+    text-align: center;
+    h1{
+        padding-top: 30px;
+    }
+    p.ingresos{
+        font-size: 32px;
+        font-weight: bold;
+        padding: 10px;
+    }
+    ul{
+        padding: 0.9rem;
+        li{
+            display: inline-block;
+            padding: 10px;
+            p{
+                padding: 10px;
+            }
+            img{
+                width: 12rem;
+                margin: 10px;
+                display: block;
+            }
+        }
+    }
+    .boton{
+        @include estilosBotones;
+    }
+    fieldset{
+        display: none;
+    }
+}
+
+/* estilos del footer*/
+
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    nav{
+        ul{
+            list-style: none;
+            padding: 10px;
+            li{
+                margin: 10px;
+                font-weight: bold;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    h2{
+        font-size: 13px;
+        padding: 20px;
+    }
+}
+
+
+
+
+
+

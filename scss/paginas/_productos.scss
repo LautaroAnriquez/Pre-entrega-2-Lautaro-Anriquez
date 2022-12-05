@@ -1,0 +1,53 @@
+/* estilos de productos */
+
+/* contenedor */
+
+.contenedor-dos{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header"
+        "section main"
+        "footer footer";
+}
+
+/* estilo de section */
+
+section{
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    h2{
+        padding-top: 1.8rem;
+    }
+    ul{
+        list-style: none;
+        padding: 0.5rem;
+    }
+}
+
+/* estilo main */
+
+.productos{
+    h1{
+        padding: 1.5rem;
+    }
+    ul{
+        li{
+            p{
+                padding: 10px;
+            }
+            input{
+                margin: 10px;
+                padding: 5px;
+            }
+            .boton{
+                @include estilosBotones;
+            }
+        }
+    }
+}

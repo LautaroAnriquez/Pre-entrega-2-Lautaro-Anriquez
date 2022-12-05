@@ -1,0 +1,25 @@
+/* estilos de mi cuenta */
+
+.mi-cuenta{
+    .titulo{
+        font-weight: bold;
+        padding: 10px;
+        color: white;
+        font-size: 1.3rem;
+    }
+    .borde{
+        @include recuadros
+    }
+    div{
+        padding: 0.5rem;
+        p{
+            display: inline;
+        }
+        input{
+            
+        }
+        .boton{
+            @include estilosBotones;
+        }
+    }
+}

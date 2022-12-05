@@ -1,0 +1,38 @@
+//mixin
+
+@mixin estilosBotones{
+    color: $texto-botones;
+    font-weight: bold;
+    background-color: $fondo-botones;
+    padding: 0.3rem;
+    margin: 0.3rem;
+}
+
+@mixin recuadros{
+    background-color: black;
+    border: 2px solid grey;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+
+@mixin textoRecuadros{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-size: 1.2rem;
+}
+
+@mixin hoverMenu{
+    transform: scale(0.9);
+    color: rgb(179, 24, 24);
+
+}
+
+@mixin hoverBoton{
+    transform: scale(0.9);
+    background-color: rgb(179, 24, 24);
+    color: whitesmoke;
+}

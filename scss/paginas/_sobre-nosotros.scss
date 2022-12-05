@@ -1,0 +1,10 @@
+/* estilo de sobre nosotros */
+
+.sobre-nosotros{
+    div{
+        @include recuadros;
+    }
+    p{
+        @include textoRecuadros;
+    }
+}
