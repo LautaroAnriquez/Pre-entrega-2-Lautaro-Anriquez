@@ -8,7 +8,7 @@
         font-size: 1.3rem;
     }
     .borde{
-        @include recuadros
+        @include recuadros;
     }
     div{
         padding: 0.5rem;
@@ -16,7 +16,7 @@
             display: inline;
         }
         input{
-            
+          
         }
         .boton{
             @include estilosBotones;

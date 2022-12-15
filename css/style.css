@@ -6,7 +6,7 @@
 
 /* estilos generales*/
 body {
-  font-family: 'Roboto Condensed', sans-serif; }
+  font-family: 'Rubik', sans-serif; }
 
 /* estilo del contenedor */
 .contenedor-uno {
@@ -184,17 +184,8 @@ section {
   padding: 0.3rem;
   margin: 0.3rem; }
 
-/* mq */
-@media screen and (min-width: 1024px) {
-  /*estilo del nav*/
-  .nav-estilo div div ul li a:hover {
-    transform: scale(0.9);
-    color: #b31818; }
-  /* estilos de boton */
-  main ul li .boton:hover {
-    transform: scale(0.9);
-    background-color: #b31818;
-    color: whitesmoke; }
+/* mq tablet */
+@media screen and (min-width: 768px) {
   /* estilo del fieldset */
   main fieldset {
     display: block;
@@ -202,7 +193,21 @@ section {
     text-align: center;
     color: whitesmoke;
     padding: 10px;
-    border: 2px solid black; }
+    border: 2px solid black; } }
+
+/* mq desktop*/
+@media screen and (min-width: 1024px) {
+  /*estilo del nav*/
+  .nav-estilo div div ul li a:hover {
+    transform: scale(0.9);
+    color: #b31818; }
+  .estilo-dropdown:active {
+    background-color: whitesmoke; }
+  /* estilos de boton */
+  main ul li .boton:hover {
+    transform: scale(0.9);
+    background-color: #b31818;
+    color: whitesmoke; }
   /* estilo de la section */
   section ul li:hover {
     transform: scale(0.9);

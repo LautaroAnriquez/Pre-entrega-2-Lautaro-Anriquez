@@ -1,4 +1,23 @@
-/* mq */
+/* mq tablet */
+
+@media screen and (min-width:768px){
+   
+    /* estilo del fieldset */
+
+    main{
+        fieldset{
+            display: block;
+            background-color: black;
+            text-align: center;
+            color: whitesmoke;
+            padding: 10px;
+            border: 2px solid black;
+        }
+    }
+}
+
+
+/* mq desktop*/
 
 @media screen and (min-width:1024px){
     /*estilo del nav*/
@@ -17,6 +36,10 @@
         }
     }
 
+    .estilo-dropdown:active{
+        background-color: whitesmoke;
+    }
+
     /* estilos de boton */
 
     main{
@@ -29,18 +52,7 @@
         }
     }
 
-    /* estilo del fieldset */
-
-    main{
-        fieldset{
-            display: block;
-            background-color: black;
-            text-align: center;
-            color: whitesmoke;
-            padding: 10px;
-            border: 2px solid black;
-        }
-    }
+    
 
     /* estilo de la section */
 
